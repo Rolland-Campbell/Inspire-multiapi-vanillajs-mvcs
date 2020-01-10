@@ -1,0 +1,69 @@
+.backgroundPic {
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: cover;
+}
+body {
+  height: 100vh;
+}
+
+main {
+  height: 90%;
+}
+
+footer {
+  height: 10%;
+  color: white;
+}
+
+.dateTime {
+  color: white;
+  font-size: 60px;
+  align-self: center;
+  text-align: center;
+  text-shadow: 2px 2px #140f0f;
+}
+
+.photo {
+  height: 200px;
+  width: 300px;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+.cardStyle {
+  background-color: rgba(128, 128, 128, 0.199);
+}
+
+.newsStyle {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.textTitle {
+  color: white;
+  font-weight: bold;
+  font-size: small;
+}
+
+.textAuthor {
+  color: white;
+  font-size: x-small;
+}
+
+.textWeather {
+  color: white;
+  text-shadow: 2px 2px #140f0f;
+  text-align: center;
+}
+
+.weatherBackground {
+background-color: rgba(128, 128, 128, 0.445);
+padding: 3px;
+border: black;
+border-style: solid;
+border-width: 1px;
+border-radius: 20px;
+}

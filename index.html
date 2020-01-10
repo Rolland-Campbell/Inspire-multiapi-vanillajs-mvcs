@@ -7,13 +7,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
     <link rel="stylesheet" href="assets/style.css">
-    <title>Document</title>
+    <title>Inspire Science</title>
 </head>
 
-<body class="container-fluid">
+<body class="container-fluid backgroundPic">
+    <main class="row">
+        <div class="col-2">
+            <div class="col-12" id="unsplash">
+                <!-- unsplash pic -->
+            </div>
+        </div>
+        <div class="col-8 p-0 m-0 dateTime">
+            <div>
+                <p id="date"></p>
+                <p id="time"></p>
+            </div>
+        </div>
+        <div class="col-2 newsStyle">
+            <div id="newsFeed">
+                <!-- news feed -->
+            </div>
+        </div>
+        </div>
+    </main>
 
+    <footer>
+        <div class="row">
+            <div class="col-12">
+                <!-- weather -->
+                <div id="weather">Test</div>
+            </div>
+        </div>
+    </footer>
 
-
+    <script>
+        var dt = new Date();
+        document.getElementById("date").innerHTML = (("0" + dt.getDate()).slice(-2)) + "/" + (("0" + (dt.getMonth() + 1)).slice(-2)) + "/" + (dt.getFullYear())
+        document.getElementById('time').innerHTML = (("0" + dt.getHours()).slice(-2)) + ":" + (("0" + dt.getMinutes()).slice(-2));
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
         </script>
